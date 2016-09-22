@@ -1,13 +1,15 @@
 body {
   background-image: url("../images/bg.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: 50% 0%;
+  background-size: 100%;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
+  max-height: 100%
   margin: 0 auto;
   margin-bottom: 30px;
   background-color: #fff;
@@ -110,33 +112,31 @@ body {
 }
 
 .main-menu .sub-menu {
-    position: absolute;
-    left: -2px;
-    display: none;
-    width: 150px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background: #303030;
+  position: absolute;
+  display: none;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #303030;
 }
 
 .main-menu .sub-menu a {
-    margin-bottom: -1px;
+  margin-bottom: -1px;
 }
 
 .main-menu>li:hover .sub-menu {
-    display: block;
+  display: block;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
-  max-height: 570px;
+  max-height: 100%;
 }
 
 .col_left {
   width: 25%;
-  max-height: 570px;
   background-color: #edeef0;
   text-align: center;
   line-height: 30px;
@@ -144,12 +144,9 @@ body {
 
 .col_right {
   width: 25%;
-  max-height: 570px;
   background-color: #edeef0;
   text-align: center;
   line-height: 30px;
-  max-height: 60%;
-  overflow: hidden;
 }
 
 .copyright {
